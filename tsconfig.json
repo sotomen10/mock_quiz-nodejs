@@ -1,0 +1,44 @@
+// {
+//     "compilerOptions": {
+//       // Define la versión de ECMAScript a la que se debe compilar el código TypeScript
+//       "target": "ES2020",  // Compila el código TypeScript a ES2020 JavaScript
+  
+//       // Especifica el módulo de sistema de módulos a utilizar
+//       "module": "commonjs",  // Usa el sistema de módulos CommonJS (utilizado por Node.js)
+  
+//       // Habilita todas las verificaciones de tipo estrictas
+//       "strict": true,  // Habilita el modo estricto, que incluye todas las opciones de estrictas como 'noImplicitAny'
+  
+//       // Permite la interoperabilidad entre módulos CommonJS y ES Modules
+//       "esModuleInterop": true,  // Habilita la interoperabilidad con módulos CommonJS y ES Modules, facilitando la importación de módulos
+  
+//       // Omite la comprobación de tipos en los archivos de declaración de tipo (.d.ts)
+//       "skipLibCheck": true,  // Omite la comprobación de tipo en archivos de declaración de tipo para acelerar la compilación
+  
+//       // Asegura que el nombre de los archivos sea consistente con el uso en el código
+//       "forceConsistentCasingInFileNames": true,  // Asegura que los nombres de archivos sean consistentes con el uso en el código
+  
+//       // Habilita el soporte para decoradores, necesario para la inyección de dependencias y otras funcionalidades en TypeScript
+//       "experimentalDecorators": true,  // Permite el uso de decoradores en TypeScript
+  
+//       // Habilita la generación de metadatos de decoradores, necesario para algunas bibliotecas que usan decoradores
+//       "emitDecoratorMetadata": true  // Emite metadatos sobre los decoradores para su uso en tiempo de ejecución
+//     },
+//     // Especifica los archivos y directorios que deben ser incluidos en la compilación
+//     "include": ["src"]  // Incluye todos los archivos en la carpeta 'src' en la compilación
+  
+  {
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "commonjs",
+      "rootDir": "./src",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "moduleResolution": "node"
+    },
+    "include": ["src//*"],
+    "exclude": ["node_modules"]
+  }
